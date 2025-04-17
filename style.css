@@ -1,0 +1,82 @@
+.hero {
+    background: url('../MIDTERM/Images/background.jpg');
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.navbar-nav a:hover{
+    
+    color: steelblue;
+}
+.navbar-nav a{
+    
+    color: white;
+}
+.hero h1{
+    font-size:40px ;
+    font-weight: bold;
+
+}
+.hero p{
+    font-size:20px ;
+   
+    text-align: center;
+
+}
+.hero a:hover{
+    background-color: blanchedalmond;
+    color: blue;
+    
+
+}
+.card a:hover{
+    background-color: blanchedalmond;
+    color: blue;
+    
+
+}
+.footer i {
+    color: #007bff; /* Blue color */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer i:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+#contact {
+    background-color: #f8f9fa;
+}
+
+#contactForm {
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+#contactForm .form-control {
+    border-radius: 0.375rem;
+    font-size: 1rem;
+}
+
+#contactForm button {
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 0.375rem;
+}
+
+#contactForm .form-label {
+    font-weight: bold;
+}

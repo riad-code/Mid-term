@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techno Solutions</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#"> Riad Techno Solutions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link fw-bold fs-4" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold fs-4" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold fs-4" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold fs-4" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Welcome to Techno Solutions</h1>
+            <p>We envision a world where technology and sustainability go hand in hand. Our mission is to develop innovative, eco-friendly solutions that help businesses and individuals reduce their environmental footprint while enhancing efficiency. We believe that cutting-edge technology can drive positive change, creating a greener, smarter, and more sustainable future for generations to come. Through continuous research, collaboration, and a commitment to excellence, we aim to be a global leader in sustainable technology, empowering businesses to thrive while protecting our planet.</p>
+            <a href="#services" class="btn btn-primary fw-bold fs-5">Learn More</a>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="container py-5">
+        <h2 class="text-center fw-bold fs-2">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../MIDTERM/Images/picture1.jpg" class="card-img-top" alt="Service 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Sustainable IT Solutions </h5>
+                        <p class="card-text">Renewable energy services, including solar panels, smart grids, and wind/hydro consulting for efficient power management.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../MIDTERM/Images/picture2.jpg" class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Home & IoT Automation</h5>
+                        <p class="card-text">IoT-powered solutions for smart lighting, HVAC, and energy monitoring to reduce consumption and enhance efficiency.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../MIDTERM/Images/picture3.jpg" class="card-img-top" alt="Service 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Green Energy Solutions</h5>
+                        <p class="card-text">Renewable energy services, including solar panels, smart grids, and wind/hydro consulting for efficient power management.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div id="contact" class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <h2 class="text-center fw-bold fs-2 mb-4">Contact Us</h2>
+                <p>We’d love to hear from you! Whether you have questions, suggestions, or feedback, feel free to reach out to us. Our team is always ready to assist you with your needs. Simply fill out the form below, and we’ll get back to you as soon as possible.Your thoughts and inquiries are important to us, and we are committed to providing you with the best service possible.</p>
+                <form id="contactForm" class="shadow p-4 rounded-3 bg-light">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Techno Solutions. Follow us on 
+            <a href="https://www.facebook.com" class="text-light" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>, 
+            <a href="https://twitter.com" class="text-light" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>, 
+            <a href="https://www.linkedin.com" class="text-light" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </p>
+    </div>
+    
+    
+
+    <script>
+        $(document).ready(function() {
+            $('#contactForm').submit(function(event) {
+                event.preventDefault();
+                let email = $('#email').val();
+                let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                if (!email.match(emailPattern)) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+                alert('Form submitted successfully!');
+            });
+        });
+    </script>
+</body>
+</html>
